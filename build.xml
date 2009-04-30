@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE project [
+<!ENTITY baseBuild SYSTEM "../Build/baseBuild.xml.inc">
+]>
+<project name="Moss Collections" default="jar" basedir=".">
+
+	<!-- Version number and other build-specific properties -->
+	<property file="etc/build.properties"/>
+
+	<!-- Set up all the project specific properties -->
+	<property name="PROJECT_NAME" value="Moss Collections"/>
+	<property name="PROJECT_SHORT_NAME" value="moss-collections"/>
+	<property name="PROJECT_DESCRIPTION" value="Extra Collections classes not found in core Java"/>
+	<property name="PROJECT_COPYRIGHT" value="Copyright Wyatt Olson"/>
+
+    <path id="classpath">
+    </path>
+	
+	&baseBuild;
+
+</project>
