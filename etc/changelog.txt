@@ -1,0 +1,6 @@
+2.0.1.0 - June 1 2009
+-Re-wrote HistorySet to make implementation more efficient.  New class should be a drop-in replacement for any existing applications.
+-Wrote HistoryMap to follow the same guidelines as HistorySet, but allow you to link data to the set of keys.  Designed to be used as a memory cache implementation. 
+
+2.0.0.0 - May 27 2009
+-First version after splitting Moss to a modular architecture. 
