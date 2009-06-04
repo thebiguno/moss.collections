@@ -52,6 +52,7 @@ public class ConcurrentHistorySet<E> extends ConcurrentLinkedQueue<E> implements
 		while (this.size() > capacity){
 			removedItems.add(this.poll());
 		}
+		this.removeAll(removedItems);
 		return removedItems;
 	}
 }
