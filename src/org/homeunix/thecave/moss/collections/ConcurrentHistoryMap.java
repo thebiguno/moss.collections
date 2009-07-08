@@ -43,6 +43,7 @@ public class ConcurrentHistoryMap<K, V> extends ConcurrentHashMap<K, V>{
 			ret = this.remove(key);
 		}
 		super.put(key, value);
+		workingSet.add(key);
 		
 		Collection<K> itemsToRemove = workingSet.trim(capacity);
 		for (K k : itemsToRemove) {
