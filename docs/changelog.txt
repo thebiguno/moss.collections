@@ -1,3 +1,6 @@
+2.1.0.0 - September 6 2009
+-Renamed packages to ca.digitalcave
+
 2.0.1.0 - June 1 2009
 -Re-wrote HistorySet to make implementation more efficient.  New class should be a drop-in replacement for any existing applications.
 -Wrote HistoryMap to follow the same guidelines as HistorySet, but allow you to link data to the set of keys.  Designed to be used as a memory cache implementation. 
